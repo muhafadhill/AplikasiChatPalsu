@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context="id.fadhil.aplikasichat.KontenActivity">
+
+	<com.rengwuxian.materialedittext.MaterialEditText
+		android:id="@+id/edt_sender"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:hint="Nama Pengguna"
+		android:inputType="text"
+		app:met_floatingLabel="highlight"
+		app:met_floatingLabelText="Nama Pengguna"/>
+
+	<com.rengwuxian.materialedittext.MaterialEditText
+		android:id="@+id/edt_isi"
+		android:layout_width="match_parent"
+		android:layout_height="100dp"
+		android:layout_above="@+id/btn_send"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+		android:layout_margin="10dp"
+		android:layout_marginBottom="19dp"
+		android:hint="Isi Konten"
+		android:inputType="text"
+		app:met_floatingLabel="highlight"
+		app:met_floatingLabelText="Isi Konten"/>
+
+	<Button
+		android:id="@+id/btn_send"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentEnd="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginBottom="24dp"
+		android:text="Kirim Pesan"/>
+
+</RelativeLayout>
